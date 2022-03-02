@@ -38,7 +38,8 @@ h6 {
   color: #828282;
 }
 
-p {
+p,
+label {
   font-weight: 500;
   font-size: 16px;
   color: #828282;
@@ -57,19 +58,49 @@ img {
   border-radius: 12px;
 }
 
+progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #c4c4c4;
+  border-radius: 12px;
+  border: none;
+  height: 8px;
+}
+
+progress::-webkit-progress-value {
+  background: #2f80ed;
+  border-radius: 12px;
+}
+
 .container {
-  max-width: 1200px;
   width: 90%;
   padding: 0rem 3rem;
+  margin: 0 auto;
+}
+
+.container2 {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
 }
 
 .row {
   display: flex;
+  justify-content: space-between;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
 }
 
 .btn {
@@ -104,26 +135,33 @@ img {
   padding-right: 10px;
 }
 
-.billy-card {
+.cards {
   padding-top: 3em;
 }
-.billy-card .container .column {
-  width: 33%;
+.cards .container .row {
+  justify-content: space-between;
+}
+.cards .container .row .col {
+  width: 25%;
   background-color: #fff;
   border-radius: 12px;
   padding: 1.5rem;
 }
-.billy-card .container .column img {
+.cards .container .row .col img {
   width: 367px;
   height: 358px;
   -o-object-fit: cover;
      object-fit: cover;
   padding-bottom: 10px;
 }
-.billy-card .container .column .contact-info {
-  padding: 1.5rem 0rem;
+.cards .container .row .col .title {
+  max-width: 90%;
 }
-.billy-card .container .column .contact-info a {
+.cards .container .row .col .contact-info {
+  padding: 1.5rem 0rem;
+  max-width: 90%;
+}
+.cards .container .row .col .contact-info a {
   display: inline-block;
   font-weight: 500;
   font-size: 18px;
@@ -131,4 +169,38 @@ img {
   color: #4f4f4f;
   text-decoration: none;
   padding-bottom: 10px;
+}
+.cards .container .row .col .description {
+  max-width: 100%;
+}
+.cards .container .row .front-end {
+  height: 50%;
+  width: 50%;
+  margin: 0rem 2rem;
+}
+.cards .container .row .front-end h4 {
+  padding-bottom: 20px;
+}
+.cards .container .row .front-end .row {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cards .container .row .front-end .row .label {
+  padding-bottom: 1rem;
+  align-items: center;
+}
+.cards .container .row .design {
+  width: 30%;
+  height: 25%;
+}
+.cards .container .row .design h4 {
+  padding-bottom: 20px;
+}
+.cards .container .row .design .row {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cards .container .row .design .row .label {
+  padding-bottom: 1rem;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
