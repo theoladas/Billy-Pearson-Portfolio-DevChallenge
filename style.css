@@ -15,10 +15,20 @@ h1 {
   font-size: 24px;
   padding-bottom: 10px;
 }
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 18px;
+  }
+}
 
 h2 {
   font-weight: 500;
   font-size: 24px;
+}
+@media (max-width: 1100px) {
+  h2 {
+    font-size: 18px;
+  }
 }
 
 h3 {
@@ -26,10 +36,20 @@ h3 {
   font-size: 18px;
   color: #828282;
 }
+@media (max-width: 1100px) {
+  h3 {
+    font-size: 16px;
+  }
+}
 
 h4 {
   font-weight: 700;
   font-size: 18px;
+}
+@media (max-width: 1100px) {
+  h4 {
+    font-size: 16px;
+  }
 }
 
 h5 {
@@ -50,6 +70,12 @@ label {
   font-size: 16px;
   color: #828282;
 }
+@media (max-width: 1100px) {
+  p,
+label {
+    font-size: 14px;
+  }
+}
 
 a {
   font-weight: 500;
@@ -61,6 +87,13 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+@media (max-width: 1100px) {
+  progress {
+    margin: 5px;
+    width: 50%;
+  }
 }
 
 progress[value] {
@@ -97,7 +130,6 @@ progress::-webkit-progress-value {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 12px;
   padding: 1.5rem;
 }
 
@@ -135,6 +167,12 @@ progress::-webkit-progress-value {
 .fa-solid {
   padding-right: 10px;
 }
+@media (max-width: 1100px) {
+  .fa-solid {
+    font-size: 12px;
+    padding-right: 8px;
+  }
+}
 
 .col {
   background-color: #fff;
@@ -143,10 +181,15 @@ progress::-webkit-progress-value {
 }
 
 .grid {
-  padding-top: 2em;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+}
+@media (max-width: 1100px) {
+  .grid {
+    gap: 1.5rem;
+  }
 }
 .grid .span-col-2 {
   grid-column: span 2/auto;
@@ -162,13 +205,26 @@ progress::-webkit-progress-value {
   font-weight: 500;
   font-size: 16px;
   color: #e0e0e0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1100px) {
+  .grid .span-col-2 .blog-card .info span {
+    font-size: 14px;
+  }
 }
 .grid .span-col-2 .blog-card .info h2 {
   color: #333;
+  margin-bottom: 10px;
 }
 .grid .span-col-2 .blog-card .info p {
   width: 60%;
+  margin-bottom: 10px;
+}
+@media (max-width: 1100px) {
+  .grid .span-col-2 .blog-card .info p {
+    font-size: 14px;
+    width: 100%;
+  }
 }
 .grid .span-col-2 .blog-card .info a {
   text-decoration: none;
@@ -178,6 +234,7 @@ progress::-webkit-progress-value {
 }
 .grid .span-col-2 .blog-card .image img {
   border-radius: 12px;
+  max-width: 100%;
 }
 .grid .span-col-2 .recipe .row {
   justify-content: flex-start;
@@ -211,6 +268,7 @@ progress::-webkit-progress-value {
   margin-right: 20px;
 }
 .grid .front-end {
+  border-radius: 12px;
   height: 100%;
 }
 .grid .front-end h4 {
@@ -223,6 +281,12 @@ progress::-webkit-progress-value {
 .grid .design {
   width: 80%;
   height: 50%;
+  border-radius: 12px;
+}
+@media (max-width: 1100px) {
+  .grid .design {
+    width: 100%;
+  }
 }
 .grid .design h4 {
   padding-bottom: 20px;
@@ -241,7 +305,7 @@ progress::-webkit-progress-value {
 }
 .grid .span-row-3 .col img {
   max-width: 100%;
-  height: 560px;
+  max-height: 560px;
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -254,6 +318,11 @@ progress::-webkit-progress-value {
   padding: 1.5rem 0rem;
   max-width: 90%;
 }
+@media (max-width: 1100px) {
+  .grid .span-row-3 .col .contact-info {
+    padding: 1rem 0rem;
+  }
+}
 .grid .span-row-3 .col .contact-info a {
   display: inline-block;
   font-weight: 500;
@@ -263,8 +332,18 @@ progress::-webkit-progress-value {
   text-decoration: none;
   padding-bottom: 10px;
 }
+@media (max-width: 1100px) {
+  .grid .span-row-3 .col .contact-info a {
+    font-size: 14px;
+  }
+}
 .grid .span-row-3 .col .description {
   max-width: 100%;
+}
+@media (max-width: 1100px) {
+  .grid .span-row-3 .col .description h3 {
+    font-size: 14px;
+  }
 }
 .grid .span-row-3 .hobbies h2 {
   padding-bottom: 20px;
@@ -288,12 +367,30 @@ progress::-webkit-progress-value {
   height: 100%;
   justify-content: space-around;
 }
+@media (max-width: 1100px) {
+  .grid .span-row-2 .experiences h2 {
+    margin-bottom: 20px;
+  }
+}
 .grid .span-row-2 .experiences .row {
   align-items: center;
+}
+@media (max-width: 1100px) {
+  .grid .span-row-2 .experiences .row {
+    flex-wrap: wrap;
+  }
 }
 .grid .span-row-2 .experiences .row img {
   width: 84px;
   max-height: 84px;
+  border-radius: none;
+}
+@media (max-width: 1100px) {
+  .grid .span-row-2 .experiences .row img {
+    margin: 0 auto;
+  }
+}
+.grid .span-row-2 .experiences .row .column {
   border-radius: none;
 }
 .grid .span-row-2 .experiences .row .column h6 {

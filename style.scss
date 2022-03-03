@@ -12,19 +12,31 @@ h1 {
   font-weight: 600;
   font-size: 24px;
   padding-bottom: 10px;
+  @media (max-width: 1100px) {
+    font-size: 18px;
+  }
 }
 h2 {
   font-weight: 500;
   font-size: 24px;
+  @media (max-width: 1100px) {
+    font-size: 18px;
+  }
 }
 h3 {
   font-weight: 500;
   font-size: 18px;
   color: #828282;
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
 }
 h4 {
   font-weight: 700;
   font-size: 18px;
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
 }
 h5 {
   font-weight: 600;
@@ -41,7 +53,11 @@ label {
   font-weight: 500;
   font-size: 16px;
   color: #828282;
+  @media (max-width: 1100px) {
+    font-size: 14px;
+  }
 }
+
 a {
   font-weight: 500;
   font-size: 16px;
@@ -51,6 +67,12 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+progress {
+  @media (max-width: 1100px) {
+    margin: 5px;
+    width: 50%;
+  }
 }
 progress[value] {
   -webkit-appearance: none;
@@ -81,7 +103,6 @@ progress::-webkit-progress-value {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 12px;
   padding: 1.5rem;
 }
 .btn {
@@ -115,6 +136,10 @@ progress::-webkit-progress-value {
 }
 .fa-solid {
   padding-right: 10px;
+  @media (max-width: 1100px) {
+    font-size: 12px;
+    padding-right: 8px;
+  }
 }
 .col {
   background-color: #fff;
@@ -123,12 +148,16 @@ progress::-webkit-progress-value {
 }
 
 .grid {
-  padding-top: 2em;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  @media (max-width: 1100px) {
+    gap: 1.5rem;
+  }
   .span-col-2 {
     grid-column: span 2 / auto;
+
     h3 {
       color: #4f4f4f;
     }
@@ -140,13 +169,22 @@ progress::-webkit-progress-value {
           font-weight: 500;
           font-size: 16px;
           color: #e0e0e0;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
+          @media (max-width: 1100px) {
+            font-size: 14px;
+          }
         }
         h2 {
           color: #333;
+          margin-bottom: 10px;
         }
         p {
           width: 60%;
+          margin-bottom: 10px;
+          @media (max-width: 1100px) {
+            font-size: 14px;
+            width: 100%;
+          }
         }
         a {
           text-decoration: none;
@@ -156,6 +194,7 @@ progress::-webkit-progress-value {
         width: 50%;
         img {
           border-radius: 12px;
+          max-width: 100%;
         }
       }
     }
@@ -196,7 +235,9 @@ progress::-webkit-progress-value {
     }
   }
   .front-end {
+    border-radius: 12px;
     height: 100%;
+
     h4 {
       padding-bottom: 20px;
     }
@@ -208,6 +249,10 @@ progress::-webkit-progress-value {
   .design {
     width: 80%;
     height: 50%;
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
+    border-radius: 12px;
     h4 {
       padding-bottom: 20px;
     }
@@ -226,9 +271,7 @@ progress::-webkit-progress-value {
       padding: 1.5rem;
       img {
         max-width: 100%;
-        // height: 358px;
-        height: 560px;
-        // height: 70%;
+        max-height: 560px;
         border-radius: 12px;
         object-fit: cover;
         padding-bottom: 10px;
@@ -239,6 +282,9 @@ progress::-webkit-progress-value {
       .contact-info {
         padding: 1.5rem 0rem;
         max-width: 90%;
+        @media (max-width: 1100px) {
+          padding: 1rem 0rem;
+        }
         a {
           display: inline-block;
           font-weight: 500;
@@ -247,10 +293,18 @@ progress::-webkit-progress-value {
           color: #4f4f4f;
           text-decoration: none;
           padding-bottom: 10px;
+          @media (max-width: 1100px) {
+            font-size: 14px;
+          }
         }
       }
       .description {
         max-width: 100%;
+        h3 {
+          @media (max-width: 1100px) {
+            font-size: 14px;
+          }
+        }
       }
     }
     // HOBBIES
@@ -276,17 +330,28 @@ progress::-webkit-progress-value {
   .span-row-2 {
     grid-row: span 2 / auto;
     .experiences {
+      h2 {
+        @media (max-width: 1100px) {
+          margin-bottom: 20px;
+        }
+      }
       height: 100%;
       justify-content: space-around;
-
       .row {
         align-items: center;
+        @media (max-width: 1100px) {
+          flex-wrap: wrap;
+        }
         img {
           width: 84px;
           max-height: 84px;
           border-radius: none;
+          @media (max-width: 1100px) {
+            margin: 0 auto;
+          }
         }
         .column {
+          border-radius: none;
           h6 {
             padding-bottom: 10px;
           }
