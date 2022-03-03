@@ -88,13 +88,6 @@ progress::-webkit-progress-value {
   margin: 0 auto;
 }
 
-.container2 {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-}
-
 .row {
   display: flex;
   justify-content: space-between;
@@ -113,7 +106,9 @@ progress::-webkit-progress-value {
   font-size: 18px;
   color: #fff;
   background-color: #2f80ed;
-  padding: 5px 25px;
+  border: none;
+  border-radius: 12px;
+  padding: 9px 35px;
   transition: all 0.3s ease;
 }
 .btn:hover {
@@ -128,7 +123,8 @@ progress::-webkit-progress-value {
   color: #2f80ed;
   background-color: #fff;
   border: 1px solid #2f80ed;
-  padding: 5px 25px;
+  border-radius: 12px;
+  padding: 9px 35px;
   transition: all 0.3s ease;
 }
 .btn-hover:hover {
@@ -182,6 +178,37 @@ progress::-webkit-progress-value {
 }
 .grid .span-col-2 .blog-card .image img {
   border-radius: 12px;
+}
+.grid .span-col-2 .recipe .row {
+  justify-content: flex-start;
+}
+.grid .span-col-2 .recipe .row .image img {
+  width: 322px;
+  border-radius: 12px;
+}
+.grid .span-col-2 .recipe .row .info {
+  width: 50%;
+  justify-content: space-between;
+}
+.grid .span-col-2 .recipe .row .info h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+.grid .span-col-2 .recipe .row .info span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #4f4f4f;
+  margin-bottom: 20px;
+}
+.grid .span-col-2 .recipe .row .info p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #828282;
+  margin-bottom: 20px;
+}
+.grid .span-col-2 .recipe .row button {
+  margin-top: 1.5rem;
+  margin-right: 20px;
 }
 .grid .front-end {
   height: 100%;
