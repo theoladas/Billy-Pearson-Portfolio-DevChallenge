@@ -227,9 +227,10 @@ progress::-webkit-progress-value {
       align-items: center;
     }
   }
-  // BILLY's CARD
+
   .span-row-3 {
     grid-row: span 3 / auto;
+    // BILLY'S CARD
     .col {
       background-color: #fff;
       border-radius: 12px;
@@ -260,6 +261,23 @@ progress::-webkit-progress-value {
       }
       .description {
         max-width: 100%;
+      }
+    }
+    // HOBBIES
+    .hobbies {
+      h2 {
+        padding-bottom: 20px;
+      }
+      img {
+        object-fit: cover;
+        height: auto;
+      }
+      h5 {
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
+      p {
+        margin-bottom: 2rem;
       }
     }
   }

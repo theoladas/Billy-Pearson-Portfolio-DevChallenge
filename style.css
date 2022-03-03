@@ -211,6 +211,21 @@ progress::-webkit-progress-value {
 .grid .span-row-3 .col .description {
   max-width: 100%;
 }
+.grid .span-row-3 .hobbies h2 {
+  padding-bottom: 20px;
+}
+.grid .span-row-3 .hobbies img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+.grid .span-row-3 .hobbies h5 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.grid .span-row-3 .hobbies p {
+  margin-bottom: 2rem;
+}
 .grid .span-row-2 {
   grid-row: span 2/auto;
 }
