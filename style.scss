@@ -115,78 +115,131 @@ progress::-webkit-progress-value {
 .fa-solid {
   padding-right: 10px;
 }
-
+.col {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
 // CARDS
-.cards {
-  padding-top: 3em;
-  .container {
-    .row {
-      justify-content: space-between;
-      // BILLY's CARD
-      .col {
-        width: 25%;
-        background-color: #fff;
-        border-radius: 12px;
-        padding: 1.5rem;
-        img {
-          width: 367px;
-          height: 358px;
-          object-fit: cover;
+// .cards {
+//   padding-top: 3em;
+//   .container {
+//     .row {
+//       justify-content: space-between;
+//       // BILLY's CARD
+//       .col {
+//         width: 25%;
+//         background-color: #fff;
+//         border-radius: 12px;
+//         padding: 1.5rem;
+//         img {
+//           width: 367px;
+//           height: 358px;
+//           object-fit: cover;
+//           padding-bottom: 10px;
+//         }
+//         .title {
+//           max-width: 90%;
+//         }
+//         .contact-info {
+//           padding: 1.5rem 0rem;
+//           max-width: 90%;
+//           a {
+//             display: inline-block;
+//             font-weight: 500;
+//             font-size: 18px;
+//             padding-bottom: 10px;
+//             color: #4f4f4f;
+//             text-decoration: none;
+//             padding-bottom: 10px;
+//           }
+//         }
+//         .description {
+//           max-width: 100%;
+//         }
+//       }
+//       //   FRONT END CARD & DESIGN CARD
+//       .front-end {
+//         height: 50%;
+//         width: 50%;
+//         margin: 0rem 2rem;
+//         h4 {
+//           padding-bottom: 20px;
+//         }
+//         .row {
+//           justify-content: space-between;
+//           align-items: flex-start;
+//           .label {
+//             padding-bottom: 1rem;
+//             align-items: center;
+//           }
+//         }
+//       }
+//       //   DESIGN CARD
+//       .design {
+//         width: 30%;
+//         height: 25%;
+//         h4 {
+//           padding-bottom: 20px;
+//         }
+//         .row {
+//           justify-content: space-between;
+//           align-items: flex-start;
+//           .label {
+//             padding-bottom: 1rem;
+//             align-items: center;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+.grid {
+  padding-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  .span-col-2 {
+    grid-column: span 2 / auto;
+  }
+
+  .span-row-3 {
+    grid-row: span 3 / auto;
+    .col {
+      // width: 80%;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      img {
+        width: 367px;
+        height: 358px;
+        object-fit: cover;
+        padding-bottom: 10px;
+      }
+      .title {
+        max-width: 90%;
+      }
+      .contact-info {
+        padding: 1.5rem 0rem;
+        max-width: 90%;
+        a {
+          display: inline-block;
+          font-weight: 500;
+          font-size: 18px;
+          padding-bottom: 10px;
+          color: #4f4f4f;
+          text-decoration: none;
           padding-bottom: 10px;
         }
-        .title {
-          max-width: 90%;
-        }
-        .contact-info {
-          padding: 1.5rem 0rem;
-          max-width: 90%;
-          a {
-            display: inline-block;
-            font-weight: 500;
-            font-size: 18px;
-            padding-bottom: 10px;
-            color: #4f4f4f;
-            text-decoration: none;
-            padding-bottom: 10px;
-          }
-        }
-        .description {
-          max-width: 100%;
-        }
       }
-      //   FRONT END CARD & DESIGN CARD
-      .front-end {
-        height: 50%;
-        width: 50%;
-        margin: 0rem 2rem;
-        h4 {
-          padding-bottom: 20px;
-        }
-        .row {
-          justify-content: space-between;
-          align-items: flex-start;
-          .label {
-            padding-bottom: 1rem;
-            align-items: center;
-          }
-        }
-      }
-      //   DESIGN CARD
-      .design {
-        width: 30%;
-        height: 25%;
-        h4 {
-          padding-bottom: 20px;
-        }
-        .row {
-          justify-content: space-between;
-          align-items: flex-start;
-          .label {
-            padding-bottom: 1rem;
-            align-items: center;
-          }
-        }
+      .description {
+        max-width: 100%;
       }
     }
+  }
+
+  .span-row-2 {
+    grid-row: span 2 / auto;
   }
 }

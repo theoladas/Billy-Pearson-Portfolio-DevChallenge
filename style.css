@@ -135,33 +135,44 @@ progress::-webkit-progress-value {
   padding-right: 10px;
 }
 
-.cards {
-  padding-top: 3em;
-}
-.cards .container .row {
-  justify-content: space-between;
-}
-.cards .container .row .col {
-  width: 25%;
+.col {
   background-color: #fff;
   border-radius: 12px;
   padding: 1.5rem;
 }
-.cards .container .row .col img {
+
+.grid {
+  padding-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.grid .span-col-2 {
+  grid-column: span 2/auto;
+}
+.grid .span-row-3 {
+  grid-row: span 3/auto;
+}
+.grid .span-row-3 .col {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.grid .span-row-3 .col img {
   width: 367px;
   height: 358px;
   -o-object-fit: cover;
      object-fit: cover;
   padding-bottom: 10px;
 }
-.cards .container .row .col .title {
+.grid .span-row-3 .col .title {
   max-width: 90%;
 }
-.cards .container .row .col .contact-info {
+.grid .span-row-3 .col .contact-info {
   padding: 1.5rem 0rem;
   max-width: 90%;
 }
-.cards .container .row .col .contact-info a {
+.grid .span-row-3 .col .contact-info a {
   display: inline-block;
   font-weight: 500;
   font-size: 18px;
@@ -170,37 +181,9 @@ progress::-webkit-progress-value {
   text-decoration: none;
   padding-bottom: 10px;
 }
-.cards .container .row .col .description {
+.grid .span-row-3 .col .description {
   max-width: 100%;
 }
-.cards .container .row .front-end {
-  height: 50%;
-  width: 50%;
-  margin: 0rem 2rem;
-}
-.cards .container .row .front-end h4 {
-  padding-bottom: 20px;
-}
-.cards .container .row .front-end .row {
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.cards .container .row .front-end .row .label {
-  padding-bottom: 1rem;
-  align-items: center;
-}
-.cards .container .row .design {
-  width: 30%;
-  height: 25%;
-}
-.cards .container .row .design h4 {
-  padding-bottom: 20px;
-}
-.cards .container .row .design .row {
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.cards .container .row .design .row .label {
-  padding-bottom: 1rem;
-  align-items: center;
+.grid .span-row-2 {
+  grid-row: span 2/auto;
 }/*# sourceMappingURL=style.css.map */
