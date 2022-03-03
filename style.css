@@ -155,6 +155,34 @@ progress::-webkit-progress-value {
 .grid .span-col-2 {
   grid-column: span 2/auto;
 }
+.grid .span-col-2 h3 {
+  color: #4f4f4f;
+}
+.grid .span-col-2 .blog-card .info {
+  width: 50%;
+  justify-content: space-between;
+}
+.grid .span-col-2 .blog-card .info span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+.grid .span-col-2 .blog-card .info h2 {
+  color: #333;
+}
+.grid .span-col-2 .blog-card .info p {
+  width: 60%;
+}
+.grid .span-col-2 .blog-card .info a {
+  text-decoration: none;
+}
+.grid .span-col-2 .blog-card .image {
+  width: 50%;
+}
+.grid .span-col-2 .blog-card .image img {
+  border-radius: 12px;
+}
 .grid .front-end {
   height: 100%;
 }

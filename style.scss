@@ -205,6 +205,36 @@ progress::-webkit-progress-value {
   grid-gap: 2rem;
   .span-col-2 {
     grid-column: span 2 / auto;
+    h3 {
+      color: #4f4f4f;
+    }
+    .blog-card {
+      .info {
+        width: 50%;
+        justify-content: space-between;
+        span {
+          font-weight: 500;
+          font-size: 16px;
+          color: #e0e0e0;
+          margin-bottom: 20px;
+        }
+        h2 {
+          color: #333;
+        }
+        p {
+          width: 60%;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+      .image {
+        width: 50%;
+        img {
+          border-radius: 12px;
+        }
+      }
+    }
   }
   .front-end {
     height: 100%;
