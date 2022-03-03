@@ -241,7 +241,7 @@ progress::-webkit-progress-value {
 }
 .grid .span-row-3 .col img {
   max-width: 100%;
-  height: 358px;
+  height: 560px;
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -284,21 +284,22 @@ progress::-webkit-progress-value {
 .grid .span-row-2 {
   grid-row: span 2/auto;
 }
-.grid .span-row-2 .adidas h2 {
-  padding-bottom: 20px;
+.grid .span-row-2 .experiences {
+  height: 100%;
+  justify-content: space-around;
 }
-.grid .span-row-2 .adidas .row {
+.grid .span-row-2 .experiences .row {
   align-items: center;
 }
-.grid .span-row-2 .adidas .row img {
+.grid .span-row-2 .experiences .row img {
   width: 84px;
   max-height: 84px;
   border-radius: none;
 }
-.grid .span-row-2 .adidas .row .column h6 {
+.grid .span-row-2 .experiences .row .column h6 {
   padding-bottom: 10px;
 }
-.grid .span-row-2 .adidas .row .column p {
+.grid .span-row-2 .experiences .row .column p {
   margin-top: 1rem;
 }
 

@@ -72,12 +72,7 @@ progress::-webkit-progress-value {
   padding: 0rem 3rem;
   margin: 0 auto;
 }
-// .container2 {
-//   max-width: 1200px;
-//   width: 90%;
-//   margin: 0 auto;
-//   display: flex;
-// }
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -126,80 +121,6 @@ progress::-webkit-progress-value {
   border-radius: 12px;
   padding: 1.5rem;
 }
-// CARDS
-// .cards {
-//   padding-top: 3em;
-//   .container {
-//     .row {
-//       justify-content: space-between;
-//       // BILLY's CARD
-//       .col {
-//         width: 25%;
-//         background-color: #fff;
-//         border-radius: 12px;
-//         padding: 1.5rem;
-//         img {
-//           width: 367px;
-//           height: 358px;
-//           object-fit: cover;
-//           padding-bottom: 10px;
-//         }
-//         .title {
-//           max-width: 90%;
-//         }
-//         .contact-info {
-//           padding: 1.5rem 0rem;
-//           max-width: 90%;
-//           a {
-//             display: inline-block;
-//             font-weight: 500;
-//             font-size: 18px;
-//             padding-bottom: 10px;
-//             color: #4f4f4f;
-//             text-decoration: none;
-//             padding-bottom: 10px;
-//           }
-//         }
-//         .description {
-//           max-width: 100%;
-//         }
-//       }
-//       //   FRONT END CARD & DESIGN CARD
-//       .front-end {
-//         height: 50%;
-//         width: 50%;
-//         margin: 0rem 2rem;
-//         h4 {
-//           padding-bottom: 20px;
-//         }
-//         .row {
-//           justify-content: space-between;
-//           align-items: flex-start;
-//           .label {
-//             padding-bottom: 1rem;
-//             align-items: center;
-//           }
-//         }
-//       }
-//       //   DESIGN CARD
-//       .design {
-//         width: 30%;
-//         height: 25%;
-//         h4 {
-//           padding-bottom: 20px;
-//         }
-//         .row {
-//           justify-content: space-between;
-//           align-items: flex-start;
-//           .label {
-//             padding-bottom: 1rem;
-//             align-items: center;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 
 .grid {
   padding-top: 2em;
@@ -296,17 +217,18 @@ progress::-webkit-progress-value {
     }
   }
 
+  // BILLY's CARD
   .span-row-3 {
     grid-row: span 3 / auto;
-    // BILLY'S CARD
     .col {
       background-color: #fff;
       border-radius: 12px;
       padding: 1.5rem;
       img {
         max-width: 100%;
-        height: 358px;
-        // height: auto;
+        // height: 358px;
+        height: 560px;
+        // height: 70%;
         border-radius: 12px;
         object-fit: cover;
         padding-bottom: 10px;
@@ -350,12 +272,13 @@ progress::-webkit-progress-value {
     }
   }
 
+  // EXPERIENCES CARD
   .span-row-2 {
     grid-row: span 2 / auto;
-    .adidas {
-      h2 {
-        padding-bottom: 20px;
-      }
+    .experiences {
+      height: 100%;
+      justify-content: space-around;
+
       .row {
         align-items: center;
         img {
