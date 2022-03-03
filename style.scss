@@ -337,3 +337,23 @@ progress::-webkit-progress-value {
     }
   }
 }
+
+// FOOTER
+footer {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p,
+  a {
+    color: #828282;
+    font-weight: 700;
+    font-size: 14px;
+    @media (max-width: 480px) {
+      font-size: 0.8rem;
+    }
+    @media (max-width: 390px) {
+      font-size: 0.6rem;
+    }
+  }
+}

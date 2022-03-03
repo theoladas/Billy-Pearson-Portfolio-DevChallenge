@@ -273,4 +273,29 @@ progress::-webkit-progress-value {
 }
 .grid .span-row-2 .adidas .row .column p {
   margin-top: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p,
+footer a {
+  color: #828282;
+  font-weight: 700;
+  font-size: 14px;
+}
+@media (max-width: 480px) {
+  footer p,
+footer a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 390px) {
+  footer p,
+footer a {
+    font-size: 0.6rem;
+  }
 }/*# sourceMappingURL=style.css.map */
