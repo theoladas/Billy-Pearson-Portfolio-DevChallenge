@@ -119,6 +119,10 @@ progress::-webkit-progress-value {
     background-color: transparent;
     border: 1px solid #2f80ed;
   }
+  @media (max-width: 1100px) {
+    font-size: 12px;
+    padding: 9px 25px;
+  }
 }
 .btn-hover {
   font-weight: 500;
@@ -132,6 +136,10 @@ progress::-webkit-progress-value {
   &:hover {
     color: #fff;
     background-color: #2f80ed;
+  }
+  @media (max-width: 1100px) {
+    font-size: 12px;
+    padding: 9px 25px;
   }
 }
 .fa-solid {
@@ -205,6 +213,9 @@ progress::-webkit-progress-value {
           img {
             width: 322px;
             border-radius: 12px;
+            @media (max-width: 1100px) {
+              max-width: 100%;
+            }
           }
         }
         .info {
@@ -219,17 +230,28 @@ progress::-webkit-progress-value {
             font-size: 16px;
             color: #4f4f4f;
             margin-bottom: 20px;
+            @media (max-width: 1100px) {
+              font-size: 14px;
+              width: 100%;
+            }
           }
           p {
             font-weight: 500;
             font-size: 16px;
             color: #828282;
             margin-bottom: 20px;
+            @media (max-width: 1100px) {
+              font-size: 14px;
+              width: 100%;
+            }
           }
         }
         button {
           margin-top: 1.5rem;
           margin-right: 20px;
+          @media (max-width: 1100px) {
+            margin-top: 0.5rem;
+          }
         }
       }
     }
