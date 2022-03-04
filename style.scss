@@ -209,7 +209,8 @@ progress::-webkit-progress-value {
     }
     .recipe {
       .row {
-        justify-content: flex-start;
+        align-items: center;
+
         .image {
           img {
             width: 322px;
@@ -270,7 +271,7 @@ progress::-webkit-progress-value {
     }
   }
   .design {
-    width: 80%;
+    width: 100%;
     height: 50%;
     @media (max-width: 1100px) {
       width: 100%;
