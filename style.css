@@ -99,6 +99,9 @@ img {
   display: block;
 }
 
+progress {
+  width: 70%;
+}
 @media (max-width: 1100px) {
   progress {
     margin: 5px;
