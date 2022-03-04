@@ -98,8 +98,7 @@ progress::-webkit-progress-value {
 }
 .container {
   width: 95%;
-  max-width: 1800px;
-  padding: 0rem 3rem;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .row {
@@ -130,6 +129,9 @@ progress::-webkit-progress-value {
     font-size: 12px;
     padding: 9px 25px;
   }
+  @media (max-width: 375px) {
+    padding: 9px 15px;
+  }
 }
 .btn-hover {
   font-weight: 500;
@@ -147,6 +149,9 @@ progress::-webkit-progress-value {
   @media (max-width: 1100px) {
     font-size: 12px;
     padding: 9px 25px;
+  }
+  @media (max-width: 375px) {
+    padding: 9px 15px;
   }
 }
 .fa-solid {
@@ -293,7 +298,8 @@ progress::-webkit-progress-value {
             @media (max-width: 1100px) {
               margin-top: 0.5rem;
             }
-            @media (max-width: 900px) {
+            @media (max-width: 375px) {
+              margin-right: 10px;
             }
           }
         }
@@ -369,9 +375,8 @@ progress::-webkit-progress-value {
           max-width: 30%;
           padding-right: 10px;
         }
-        @media (max-width: 420px) {
+        @media (max-width: 542px) {
           max-width: 100%;
-
           padding-right: 0;
         }
       }

@@ -130,8 +130,7 @@ progress::-webkit-progress-value {
 
 .container {
   width: 95%;
-  max-width: 1800px;
-  padding: 0rem 3rem;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -168,6 +167,11 @@ progress::-webkit-progress-value {
     padding: 9px 25px;
   }
 }
+@media (max-width: 375px) {
+  .btn {
+    padding: 9px 15px;
+  }
+}
 
 .btn-hover {
   font-weight: 500;
@@ -187,6 +191,11 @@ progress::-webkit-progress-value {
   .btn-hover {
     font-size: 12px;
     padding: 9px 25px;
+  }
+}
+@media (max-width: 375px) {
+  .btn-hover {
+    padding: 9px 15px;
   }
 }
 
@@ -358,6 +367,11 @@ progress::-webkit-progress-value {
     margin-top: 0.5rem;
   }
 }
+@media (max-width: 375px) {
+  .grid .span-col-2 .recipe .row .row button {
+    margin-right: 10px;
+  }
+}
 .grid .front-end {
   border-radius: 12px;
   height: 100%;
@@ -437,7 +451,7 @@ progress::-webkit-progress-value {
     padding-right: 10px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 542px) {
   .grid .span-row-3 .col img {
     max-width: 100%;
     padding-right: 0;
