@@ -210,45 +210,47 @@ progress::-webkit-progress-value {
 .grid .span-col-2 h3 {
   color: #4f4f4f;
 }
-.grid .span-col-2 .blog-card .info {
+.grid .span-col-2 .blog-card .row {
+  align-items: center;
+}
+.grid .span-col-2 .blog-card .row .info {
   width: 50%;
   justify-content: space-between;
 }
-.grid .span-col-2 .blog-card .info span {
+.grid .span-col-2 .blog-card .row .info span {
   font-weight: 500;
   font-size: 16px;
   color: #e0e0e0;
   margin-bottom: 10px;
 }
 @media (max-width: 1100px) {
-  .grid .span-col-2 .blog-card .info span {
+  .grid .span-col-2 .blog-card .row .info span {
     font-size: 14px;
   }
 }
-.grid .span-col-2 .blog-card .info h2 {
+.grid .span-col-2 .blog-card .row .info h2 {
   color: #333;
   margin-bottom: 10px;
 }
-.grid .span-col-2 .blog-card .info p {
-  width: 60%;
+.grid .span-col-2 .blog-card .row .info p {
+  width: 80%;
   margin-bottom: 10px;
 }
 @media (max-width: 1100px) {
-  .grid .span-col-2 .blog-card .info p {
+  .grid .span-col-2 .blog-card .row .info p {
     font-size: 14px;
     width: 100%;
   }
 }
-.grid .span-col-2 .blog-card .info a {
+.grid .span-col-2 .blog-card .row .info a {
   text-decoration: none;
 }
-.grid .span-col-2 .blog-card .image {
+.grid .span-col-2 .blog-card .row .image {
   width: 50%;
 }
-.grid .span-col-2 .blog-card .image img {
+.grid .span-col-2 .blog-card .row .image img {
   border-radius: 12px;
   max-width: 100%;
-  height: 100%;
 }
 .grid .span-col-2 .recipe .row {
   align-items: center;
