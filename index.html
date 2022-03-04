@@ -31,261 +31,271 @@
     <title>Billy Pearson's Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <div class="grid">
-        <!-- BILLY's CARD-->
-        <div class="span-row-3">
-          <div class="col column">
-            <img src="user.jpg" />
+    <!-- <div class="container"> -->
+    <div class="grid">
+      <!-- BILLY's CARD-->
+      <div class="span-row-3 billy">
+        <div class="col column">
+          <img src="user.jpg" />
+          <div class="column">
             <div class="title">
               <h1>Billy Pearson</h1>
               <h3>Front-end developer</h3>
             </div>
             <div class="contact-info">
-              <i class="fa-solid fa-envelope"></i
-              ><a href="mailto:billy@example.com">billy@example.com</a>
+              <div class="row">
+                <a href="mailto:billy@example.com"
+                  ><i class="fa-solid fa-envelope"></i>billy@example.com</a
+                >
+              </div>
               <br />
-              <i class="fa-solid fa-phone"></i>
-              <a href="tel:billy@example.com">(+603) 546 624 342</a>
+              <div class="row">
+                <a href="tel:billy@example.com"
+                  ><i class="fa-solid fa-phone"></i>(+603) 546 624 342</a
+                >
+              </div>
             </div>
-            <div class="description">
-              <h3>
-                Self-motivated developer, who is willing to learn and create
-                outstanding UI applications.
-              </h3>
-            </div>
+          </div>
+          <div class="description">
+            <h3>
+              Self-motivated developer, who is willing to learn and create
+              outstanding UI applications.
+            </h3>
           </div>
         </div>
+      </div>
 
-        <!-- FRONT END CARD -->
-        <div class="front-end column">
-          <h4>FRONT END</h4>
-          <div class="row">
-            <div class="label">
-              <label for="file">React</label>
-            </div>
-            <progress id="file" value="60" max="100"> 60% </progress>
+      <!-- FRONT END CARD -->
+      <div class="front-end column">
+        <h4>FRONT END</h4>
+        <div class="row">
+          <div class="label">
+            <label for="file">React</label>
           </div>
-          <div class="row">
-            <div class="label">
-              <label for="file">JavaScript</label>
-            </div>
-            <progress id="file" value="80" max="100"> 80% </progress>
-          </div>
-          <div class="row">
-            <div class="label">
-              <label for="file">CSS</label>
-            </div>
-            <progress id="file" value="90" max="100"> 90% </progress>
-          </div>
-          <div class="row">
-            <div class="label">
-              <label for="file">Vue</label>
-            </div>
-            <progress id="file" value="60" max="100"> 60% </progress>
-          </div>
-          <div class="row">
-            <div class="label">
-              <label for="file">Redux</label>
-            </div>
-            <progress id="file" value="80" max="100"> 80% </progress>
-          </div>
-          <div class="row">
-            <div class="label">
-              <label for="file">React Native</label>
-            </div>
-            <progress id="file" value="90" max="100"> 90% </progress>
-          </div>
+          <progress id="file" value="60" max="100"> 60% </progress>
         </div>
-
-        <!-- DESIGN CARD -->
-        <div class="design column">
-          <h4>DESIGN</h4>
-          <div class="row">
-            <div class="label">
-              <label for="file">Figma</label>
-            </div>
-            <progress id="file" value="60" max="100"> 60% </progress>
+        <div class="row">
+          <div class="label">
+            <label for="file">JavaScript</label>
           </div>
-          <div class="row">
-            <div class="label">
-              <label for="file">Photoshop</label>
-            </div>
-            <progress id="file" value="85" max="100"> 85% </progress>
-          </div>
+          <progress id="file" value="80" max="100"> 80% </progress>
         </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">CSS</label>
+          </div>
+          <progress id="file" value="90" max="100"> 90% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">Vue</label>
+          </div>
+          <progress id="file" value="60" max="100"> 60% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">Redux</label>
+          </div>
+          <progress id="file" value="80" max="100"> 80% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">React Native</label>
+          </div>
+          <progress id="file" value="90" max="100"> 90% </progress>
+        </div>
+      </div>
 
-        <!-- PROJECTS -->
-        <div class="span-col-2">
+      <!-- DESIGN CARD -->
+      <div class="design column">
+        <h4>DESIGN</h4>
+        <div class="row">
+          <div class="label">
+            <label for="file">Figma</label>
+          </div>
+          <progress id="file" value="60" max="100"> 60% </progress>
+        </div>
+        <div class="row">
+          <div class="label">
+            <label for="file">Photoshop</label>
+          </div>
+          <progress id="file" value="85" max="100"> 85% </progress>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+      <div class="span-col-2">
+        <div class="projects">
           <div class="col">
             <h3>Projects (3)</h3>
           </div>
         </div>
+      </div>
 
-        <!-- RECIPE BLOG CARD -->
-        <div class="span-col-2">
-          <div class="recipe col">
-            <div class="row">
-              <div class="image">
-                <img src="recipe-blog.png" alt="" />
-              </div>
-              <div class="info column">
-                <span>#HTML #CSS #responsive</span>
-                <h2>Recipe Blog</h2>
-                <p>
-                  In this project, I work with HTML and CSS to create a
-                  responsive page . The design is from devchallenge.io. Donec
-                  aliquam est dui, vel vestibulum diam sollicitudin id. Quisque
-                  feugiat malesuada molestie.
-                </p>
-                <div class="row">
-                  <button class="btn">Demo</button>
-                  <button class="btn-hover">Code</button>
-                </div>
-              </div>
+      <!-- RECIPE BLOG CARD -->
+      <div class="span-col-2">
+        <div class="recipe col">
+          <div class="row">
+            <div class="image">
+              <img src="recipe-blog.png" alt="" />
             </div>
-          </div>
-        </div>
-
-        <!-- EXPERIENCES CARD -->
-        <div class="span-row-2">
-          <div class="experiences column col">
-            <h2>Experiences</h2>
-            <div class="row">
-              <img src="adidas.png" />
-              <div class="column">
-                <h6>Feb 2017 - Current</h6>
-                <h5>Front-end developer</h5>
-                <p>
-                  Donec aliquam est dui, vel vestibulum diam sollicitudin id.
-                  Quisque feugiat malesuada molestie.
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <img src="h-m.png" />
-              <div class="column">
-                <h6>Aug 2016 - Feb 2018</h6>
-                <h5>Full-stack developer</h5>
-                <p>
-                  Donec aliquam est dui, vel vestibulum diam sollicitudin id.
-                  Quisque feugiat malesuada molestie.
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <img src="nivea.png" />
-              <div class="column">
-                <h6>Jun 2015 - Aug 2016</h6>
-                <h5>Junior frond-end developer</h5>
-                <p>
-                  Donec aliquam est dui, vel vestibulum diam sollicitudin id.
-                  Quisque feugiat malesuada molestie.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- MY GALLERY -->
-        <div class="span-col-2">
-          <div class="recipe col">
-            <div class="row">
-              <div class="image">
-                <img src="my-gallery.png" alt="" />
-              </div>
-              <div class="info column">
-                <span>#HTML #CSS #responsive</span>
-                <h2>My Gallery</h2>
-                <p>
-                  In this project, I work with HTML and CSS to create a
-                  responsive page . The design is from devchallenge.io. Donec
-                  aliquam est dui, vel vestibulum diam sollicitudin id. Quisque
-                  feugiat malesuada molestie.
-                </p>
-                <div class="row">
-                  <button class="btn">Demo</button>
-                  <button class="btn-hover">Code</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CHECKOUT -->
-        <div class="span-col-2">
-          <div class="recipe col">
-            <div class="row">
-              <div class="image">
-                <img src="checkout.png" alt="" />
-              </div>
-              <div class="info column">
-                <span>#HTML #CSS #responsive</span>
-                <h2>Checkout</h2>
-                <p>
-                  In this project, I work with HTML and CSS to create a
-                  responsive page . The design is from devchallenge.io. Donec
-                  aliquam est dui, vel vestibulum diam sollicitudin id. Quisque
-                  feugiat malesuada molestie.
-                </p>
-                <div class="row">
-                  <button class="btn">Demo</button>
-                  <button class="btn-hover">Code</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- HOBBIES -->
-        <div class="span-row-3">
-          <div class="hobbies col column">
-            <h2>Hobbies</h2>
-            <img src="gaming.png" />
-            <h5>Gaming</h5>
-            <p>Quisque feugiat malesuada molestie.</p>
-            <img src="cooking.png" />
-            <h5>Cooking</h5>
-            <p>Quisque feugiat malesuada molestie.</p>
-            <img src="biking.png" />
-            <h5>Biking</h5>
-            <p>Quisque feugiat malesuada molestie.</p>
-          </div>
-        </div>
-
-        <!-- BLOGS -->
-        <div class="span-col-2">
-          <div class="col">
-            <h3>Blogs (1)</h3>
-          </div>
-        </div>
-
-        <!-- BLOG CARD -->
-        <div class="span-col-2">
-          <div class="blog-card col">
-            <div class="row">
-              <div class="info column">
-                <span>Blog</span>
-                <h2>How to organize your CSS</h2>
-                <p>
-                  In this article I tell the story about Proin eu justo sit amet
-                  lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus
-                  mi.
-                </p>
-                <p>
-                  Donec aliquam est dui, vel vestibulum diam sollicitudin id.
-                  Quisque feugiat malesuada molestie. Copy
-                </p>
-                <a href="#">dev.to</a>
-              </div>
-              <div class="image">
-                <img src="mac.png" alt="" />
+            <div class="info column">
+              <span>#HTML #CSS #responsive</span>
+              <h2>Recipe Blog</h2>
+              <p>
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="row">
+                <button class="btn">Demo</button>
+                <button class="btn-hover">Code</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- EXPERIENCES CARD -->
+      <div class="span-row-2">
+        <div class="experiences column col">
+          <h2>Experiences</h2>
+          <div class="row">
+            <img src="adidas.png" />
+            <div class="column">
+              <h6>Feb 2017 - Current</h6>
+              <h5>Front-end developer</h5>
+              <p>
+                Donec aliquam est dui, vel vestibulum diam sollicitudin id.
+                Quisque feugiat malesuada molestie.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <img src="h-m.png" />
+            <div class="column">
+              <h6>Aug 2016 - Feb 2018</h6>
+              <h5>Full-stack developer</h5>
+              <p>
+                Donec aliquam est dui, vel vestibulum diam sollicitudin id.
+                Quisque feugiat malesuada molestie.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <img src="nivea.png" />
+            <div class="column">
+              <h6>Jun 2015 - Aug 2016</h6>
+              <h5>Junior frond-end developer</h5>
+              <p>
+                Donec aliquam est dui, vel vestibulum diam sollicitudin id.
+                Quisque feugiat malesuada molestie.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MY GALLERY -->
+      <div class="span-col-2">
+        <div class="recipe col">
+          <div class="row">
+            <div class="image">
+              <img src="my-gallery.png" alt="" />
+            </div>
+            <div class="info column">
+              <span>#HTML #CSS #responsive</span>
+              <h2>My Gallery</h2>
+              <p>
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="row">
+                <button class="btn">Demo</button>
+                <button class="btn-hover">Code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHECKOUT -->
+      <div class="span-col-2">
+        <div class="recipe col">
+          <div class="row">
+            <div class="image">
+              <img src="checkout.png" alt="" />
+            </div>
+            <div class="info column">
+              <span>#HTML #CSS #responsive</span>
+              <h2>Checkout</h2>
+              <p>
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="row">
+                <button class="btn">Demo</button>
+                <button class="btn-hover">Code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOBBIES -->
+      <div class="span-row-3">
+        <div class="hobbies col column">
+          <h2>Hobbies</h2>
+          <img src="gaming.png" />
+          <h5>Gaming</h5>
+          <p>Quisque feugiat malesuada molestie.</p>
+          <img src="cooking.png" />
+          <h5>Cooking</h5>
+          <p>Quisque feugiat malesuada molestie.</p>
+          <img src="biking.png" />
+          <h5>Biking</h5>
+          <p>Quisque feugiat malesuada molestie.</p>
+        </div>
+      </div>
+
+      <!-- BLOGS -->
+      <div class="span-col-2">
+        <div class="col">
+          <h3>Blogs (1)</h3>
+        </div>
+      </div>
+
+      <!-- BLOG CARD -->
+      <div class="span-col-2">
+        <div class="blog-card col">
+          <div class="row">
+            <div class="info column">
+              <span>Blog</span>
+              <h2>How to organize your CSS</h2>
+              <p>
+                In this article I tell the story about Proin eu justo sit amet
+                lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus
+                mi.
+              </p>
+              <p>
+                Donec aliquam est dui, vel vestibulum diam sollicitudin id.
+                Quisque feugiat malesuada molestie. Copy
+              </p>
+              <a href="#">dev.to</a>
+            </div>
+            <div class="image">
+              <img src="mac.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- </div> -->
     <!-- FOOTER  -->
     <footer>
       <div class="footer-text">

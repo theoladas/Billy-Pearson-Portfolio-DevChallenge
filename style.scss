@@ -42,11 +42,17 @@ h5 {
   font-weight: 600;
   font-size: 16px;
   color: #333;
+  @media (max-width: 1100px) {
+    font-size: 14px;
+  }
 }
 h6 {
   font-weight: 500;
   font-size: 14px;
   color: #828282;
+  @media (max-width: 1100px) {
+    font-size: 12px;
+  }
 }
 p,
 label {
@@ -90,8 +96,8 @@ progress::-webkit-progress-value {
   border-radius: 12px;
 }
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
+  max-width: 1800px;
   padding: 0rem 3rem;
   margin: 0 auto;
 }
@@ -155,26 +161,40 @@ progress::-webkit-progress-value {
   padding: 1.5rem;
 }
 
+// GRID SECTION
 .grid {
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  width: 100%;
   @media (max-width: 1100px) {
     gap: 1.5rem;
   }
   .span-col-2 {
     grid-column: span 2 / auto;
-
+    @media (max-width: 768px) {
+      grid-column: span 3 / auto;
+      order: 4;
+    }
     h3 {
       color: #4f4f4f;
     }
+
+    // BLOG CARD
     .blog-card {
       .row {
         align-items: center;
+        @media (max-width: 900px) {
+          flex-direction: column;
+        }
         .info {
           width: 50%;
           justify-content: space-between;
+          order: 2;
+          @media (max-width: 900px) {
+            width: 100%;
+          }
           span {
             font-weight: 500;
             font-size: 16px;
@@ -202,6 +222,10 @@ progress::-webkit-progress-value {
         }
         .image {
           width: 50%;
+          order: 1;
+          @media (max-width: 900px) {
+            width: 100%;
+          }
           img {
             border-radius: 12px;
             max-width: 100%;
@@ -210,10 +234,22 @@ progress::-webkit-progress-value {
         }
       }
     }
+
+    // PROJECTS
+
+    // .projects {
+    //   @media (max-width: 768px) {
+    //     display: none;
+    //   }
+    // }
+
+    // RECIPE CARD
     .recipe {
       .row {
         align-items: center;
-
+        @media (max-width: 900px) {
+          flex-direction: column;
+        }
         .image {
           img {
             width: 322px;
@@ -226,6 +262,9 @@ progress::-webkit-progress-value {
         .info {
           width: 50%;
           justify-content: space-between;
+          @media (max-width: 900px) {
+            width: 100%;
+          }
           h2 {
             color: #333;
             margin-bottom: 20px;
@@ -251,20 +290,32 @@ progress::-webkit-progress-value {
             }
           }
         }
-        button {
-          margin-top: 1.5rem;
-          margin-right: 20px;
-          @media (max-width: 1100px) {
+        .row {
+          @media (max-width: 900px) {
+            flex-direction: row;
+            justify-content: center;
+          }
+          button {
             margin-top: 0.5rem;
+            margin-right: 20px;
+            @media (max-width: 1100px) {
+              margin-top: 0.5rem;
+            }
+            @media (max-width: 900px) {
+            }
           }
         }
       }
     }
   }
+
+  // FRONT-END CARD
   .front-end {
     border-radius: 12px;
     height: 100%;
-
+    @media (max-width: 768px) {
+      display: none;
+    }
     h4 {
       padding-bottom: 20px;
     }
@@ -273,11 +324,16 @@ progress::-webkit-progress-value {
       align-items: center;
     }
   }
+
+  // DESIGN CARD
   .design {
     width: 100%;
     height: 50%;
     @media (max-width: 1100px) {
       width: 100%;
+    }
+    @media (max-width: 768px) {
+      display: none;
     }
     border-radius: 12px;
     h4 {
@@ -292,19 +348,44 @@ progress::-webkit-progress-value {
   // BILLY's CARD
   .span-row-3 {
     grid-row: span 3 / auto;
+    @media (max-width: 768px) {
+      grid-row: span 1;
+      grid-column: span 3;
+      order: 3;
+    }
     .col {
       background-color: #fff;
       border-radius: 12px;
       padding: 1.5rem;
+      height: 100%;
+      @media (max-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .column {
+        @media (max-width: 420px) {
+          padding: 0rem;
+        }
+      }
       img {
         max-width: 100%;
         max-height: 560px;
         border-radius: 12px;
         object-fit: cover;
         padding-bottom: 10px;
+        @media (max-width: 768px) {
+          max-width: 30%;
+          padding-right: 10px;
+        }
+        @media (max-width: 420px) {
+          max-width: 100%;
+
+          padding-right: 0;
+        }
       }
       .title {
         max-width: 90%;
+        margin-top: 1.5rem;
       }
       .contact-info {
         padding: 1.5rem 0rem;
@@ -312,21 +393,31 @@ progress::-webkit-progress-value {
         @media (max-width: 1100px) {
           padding: 1rem 0rem;
         }
-        a {
-          display: inline-block;
-          font-weight: 500;
-          font-size: 18px;
-          padding-bottom: 10px;
-          color: #4f4f4f;
-          text-decoration: none;
-          padding-bottom: 10px;
-          @media (max-width: 1100px) {
-            font-size: 14px;
+        @media (max-width: 768px) {
+          max-width: 100%;
+        }
+        .row {
+          align-items: center;
+          a {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 18px;
+            padding-bottom: 10px;
+            color: #4f4f4f;
+            text-decoration: none;
+            padding-bottom: 10px;
+            @media (max-width: 1100px) {
+              font-size: 14px;
+            }
           }
         }
       }
       .description {
         max-width: 100%;
+        @media (max-width: 768px) {
+          width: 100%;
+          margin-top: 0.3rem;
+        }
         h3 {
           @media (max-width: 1100px) {
             font-size: 14px;
@@ -334,21 +425,34 @@ progress::-webkit-progress-value {
         }
       }
     }
+
     // HOBBIES
     .hobbies {
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
       h2 {
         padding-bottom: 20px;
       }
       img {
         object-fit: cover;
         height: auto;
+        @media (max-width: 768px) {
+          max-width: 100%;
+        }
       }
       h5 {
         font-size: 18px;
         padding-bottom: 10px;
+        @media (max-width: 1100px) {
+          font-size: 16px;
+        }
       }
       p {
         margin-bottom: 2rem;
+        @media (max-width: 1100px) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -356,6 +460,10 @@ progress::-webkit-progress-value {
   // EXPERIENCES CARD
   .span-row-2 {
     grid-row: span 2 / auto;
+    @media (max-width: 768px) {
+      grid-column: span 3 / auto;
+      order: 3;
+    }
     .experiences {
       h2 {
         @media (max-width: 1100px) {
@@ -364,6 +472,7 @@ progress::-webkit-progress-value {
       }
       height: 100%;
       justify-content: space-around;
+
       .row {
         align-items: center;
         @media (max-width: 1100px) {
@@ -375,15 +484,23 @@ progress::-webkit-progress-value {
           border-radius: none;
           @media (max-width: 1100px) {
             margin: 0 auto;
+            width: 75px;
+          }
+          @media (max-width: 768px) {
+            margin: 20px;
           }
         }
         .column {
           border-radius: none;
+
           h6 {
             padding-bottom: 10px;
           }
           p {
             margin-top: 1rem;
+            @media (max-width: 1100px) {
+              font-size: 13px;
+            }
           }
         }
       }

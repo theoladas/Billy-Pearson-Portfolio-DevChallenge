@@ -57,11 +57,21 @@ h5 {
   font-size: 16px;
   color: #333;
 }
+@media (max-width: 1100px) {
+  h5 {
+    font-size: 14px;
+  }
+}
 
 h6 {
   font-weight: 500;
   font-size: 14px;
   color: #828282;
+}
+@media (max-width: 1100px) {
+  h6 {
+    font-size: 12px;
+  }
 }
 
 p,
@@ -116,8 +126,8 @@ progress::-webkit-progress-value {
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
+  max-width: 1800px;
   padding: 0rem 3rem;
   margin: 0 auto;
 }
@@ -198,6 +208,7 @@ progress::-webkit-progress-value {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  width: 100%;
 }
 @media (max-width: 1100px) {
   .grid {
@@ -207,15 +218,32 @@ progress::-webkit-progress-value {
 .grid .span-col-2 {
   grid-column: span 2/auto;
 }
+@media (max-width: 768px) {
+  .grid .span-col-2 {
+    grid-column: span 3/auto;
+    order: 4;
+  }
+}
 .grid .span-col-2 h3 {
   color: #4f4f4f;
 }
 .grid .span-col-2 .blog-card .row {
   align-items: center;
 }
+@media (max-width: 900px) {
+  .grid .span-col-2 .blog-card .row {
+    flex-direction: column;
+  }
+}
 .grid .span-col-2 .blog-card .row .info {
   width: 50%;
   justify-content: space-between;
+  order: 2;
+}
+@media (max-width: 900px) {
+  .grid .span-col-2 .blog-card .row .info {
+    width: 100%;
+  }
 }
 .grid .span-col-2 .blog-card .row .info span {
   font-weight: 500;
@@ -247,6 +275,12 @@ progress::-webkit-progress-value {
 }
 .grid .span-col-2 .blog-card .row .image {
   width: 50%;
+  order: 1;
+}
+@media (max-width: 900px) {
+  .grid .span-col-2 .blog-card .row .image {
+    width: 100%;
+  }
 }
 .grid .span-col-2 .blog-card .row .image img {
   border-radius: 12px;
@@ -254,6 +288,11 @@ progress::-webkit-progress-value {
 }
 .grid .span-col-2 .recipe .row {
   align-items: center;
+}
+@media (max-width: 900px) {
+  .grid .span-col-2 .recipe .row {
+    flex-direction: column;
+  }
 }
 .grid .span-col-2 .recipe .row .image img {
   width: 322px;
@@ -267,6 +306,11 @@ progress::-webkit-progress-value {
 .grid .span-col-2 .recipe .row .info {
   width: 50%;
   justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .grid .span-col-2 .recipe .row .info {
+    width: 100%;
+  }
 }
 .grid .span-col-2 .recipe .row .info h2 {
   color: #333;
@@ -296,18 +340,29 @@ progress::-webkit-progress-value {
     width: 100%;
   }
 }
-.grid .span-col-2 .recipe .row button {
-  margin-top: 1.5rem;
+@media (max-width: 900px) {
+  .grid .span-col-2 .recipe .row .row {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.grid .span-col-2 .recipe .row .row button {
+  margin-top: 0.5rem;
   margin-right: 20px;
 }
 @media (max-width: 1100px) {
-  .grid .span-col-2 .recipe .row button {
+  .grid .span-col-2 .recipe .row .row button {
     margin-top: 0.5rem;
   }
 }
 .grid .front-end {
   border-radius: 12px;
   height: 100%;
+}
+@media (max-width: 768px) {
+  .grid .front-end {
+    display: none;
+  }
 }
 .grid .front-end h4 {
   padding-bottom: 20px;
@@ -326,6 +381,11 @@ progress::-webkit-progress-value {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .grid .design {
+    display: none;
+  }
+}
 .grid .design h4 {
   padding-bottom: 20px;
 }
@@ -336,10 +396,29 @@ progress::-webkit-progress-value {
 .grid .span-row-3 {
   grid-row: span 3/auto;
 }
+@media (max-width: 768px) {
+  .grid .span-row-3 {
+    grid-row: span 1;
+    grid-column: span 3;
+    order: 3;
+  }
+}
 .grid .span-row-3 .col {
   background-color: #fff;
   border-radius: 12px;
   padding: 1.5rem;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .grid .span-row-3 .col {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 420px) {
+  .grid .span-row-3 .col .column {
+    padding: 0rem;
+  }
 }
 .grid .span-row-3 .col img {
   max-width: 100%;
@@ -349,8 +428,21 @@ progress::-webkit-progress-value {
      object-fit: cover;
   padding-bottom: 10px;
 }
+@media (max-width: 768px) {
+  .grid .span-row-3 .col img {
+    max-width: 30%;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .grid .span-row-3 .col img {
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
 .grid .span-row-3 .col .title {
   max-width: 90%;
+  margin-top: 1.5rem;
 }
 .grid .span-row-3 .col .contact-info {
   padding: 1.5rem 0rem;
@@ -361,7 +453,15 @@ progress::-webkit-progress-value {
     padding: 1rem 0rem;
   }
 }
-.grid .span-row-3 .col .contact-info a {
+@media (max-width: 768px) {
+  .grid .span-row-3 .col .contact-info {
+    max-width: 100%;
+  }
+}
+.grid .span-row-3 .col .contact-info .row {
+  align-items: center;
+}
+.grid .span-row-3 .col .contact-info .row a {
   display: inline-block;
   font-weight: 500;
   font-size: 18px;
@@ -371,16 +471,27 @@ progress::-webkit-progress-value {
   padding-bottom: 10px;
 }
 @media (max-width: 1100px) {
-  .grid .span-row-3 .col .contact-info a {
+  .grid .span-row-3 .col .contact-info .row a {
     font-size: 14px;
   }
 }
 .grid .span-row-3 .col .description {
   max-width: 100%;
 }
+@media (max-width: 768px) {
+  .grid .span-row-3 .col .description {
+    width: 100%;
+    margin-top: 0.3rem;
+  }
+}
 @media (max-width: 1100px) {
   .grid .span-row-3 .col .description h3 {
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .grid .span-row-3 .hobbies {
+    flex-direction: column;
   }
 }
 .grid .span-row-3 .hobbies h2 {
@@ -391,15 +502,36 @@ progress::-webkit-progress-value {
      object-fit: cover;
   height: auto;
 }
+@media (max-width: 768px) {
+  .grid .span-row-3 .hobbies img {
+    max-width: 100%;
+  }
+}
 .grid .span-row-3 .hobbies h5 {
   font-size: 18px;
   padding-bottom: 10px;
 }
+@media (max-width: 1100px) {
+  .grid .span-row-3 .hobbies h5 {
+    font-size: 16px;
+  }
+}
 .grid .span-row-3 .hobbies p {
   margin-bottom: 2rem;
 }
+@media (max-width: 1100px) {
+  .grid .span-row-3 .hobbies p {
+    font-size: 14px;
+  }
+}
 .grid .span-row-2 {
   grid-row: span 2/auto;
+}
+@media (max-width: 768px) {
+  .grid .span-row-2 {
+    grid-column: span 3/auto;
+    order: 3;
+  }
 }
 .grid .span-row-2 .experiences {
   height: 100%;
@@ -426,6 +558,12 @@ progress::-webkit-progress-value {
 @media (max-width: 1100px) {
   .grid .span-row-2 .experiences .row img {
     margin: 0 auto;
+    width: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .grid .span-row-2 .experiences .row img {
+    margin: 20px;
   }
 }
 .grid .span-row-2 .experiences .row .column {
@@ -436,6 +574,11 @@ progress::-webkit-progress-value {
 }
 .grid .span-row-2 .experiences .row .column p {
   margin-top: 1rem;
+}
+@media (max-width: 1100px) {
+  .grid .span-row-2 .experiences .row .column p {
+    font-size: 13px;
+  }
 }
 
 footer {
