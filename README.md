@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://theoladas.github.io/Billy-Pearson-Portfolio-DevChallenge/">
       Solution
     </a>
     <span> | </span>
@@ -31,7 +31,12 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+Desktop
+
+![Screenshot 2022-03-04 at 12 08 31](https://user-images.githubusercontent.com/67963370/156761029-108ea801-89b7-42c5-9ffb-71c24f650c82.png)
+![Screenshot 2022-03-04 at 12 08 43](https://user-images.githubusercontent.com/67963370/156761058-507d0830-381e-4115-a897-0fc893c12e83.png)
+![Screenshot 2022-03-04 at 12 08 50](https://user-images.githubusercontent.com/67963370/156761075-747c4bd4-86ee-427a-9477-00f0b1c3903e.png)
+
 
 
 ### Built With
