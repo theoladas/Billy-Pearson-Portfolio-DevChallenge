@@ -1,5 +1,3 @@
-<!-- Please update value in the {}  -->
-
 <h1 align="center">Billy Pearson's Portfolio</h1>
 
 <div align="center">
@@ -18,8 +16,6 @@
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -27,15 +23,11 @@
 - [Features](#features)
 - [Contact](#contact)
 
-<!-- OVERVIEW -->
-
 ## Overview
 
 Desktop
 
 ![screencapture-theoladas-github-io-Billy-Pearson-Portfolio-DevChallenge-2022-06-14-15_25_24](https://user-images.githubusercontent.com/67963370/173602046-fa169b70-0f62-465a-842a-2d147feae4b6.png)
-
-
 
 ### Built With
 
@@ -44,8 +36,6 @@ Desktop
 - [Sass](https://sass-lang.com/)
 
 ## Features
-
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt) was to build an application to complete the given user stories.
 
