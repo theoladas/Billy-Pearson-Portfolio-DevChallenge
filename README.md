@@ -33,19 +33,15 @@
 
 Desktop
 
-![Screenshot 2022-03-04 at 12 08 31](https://user-images.githubusercontent.com/67963370/156761029-108ea801-89b7-42c5-9ffb-71c24f650c82.png)
-![Screenshot 2022-03-04 at 12 08 43](https://user-images.githubusercontent.com/67963370/156761058-507d0830-381e-4115-a897-0fc893c12e83.png)
-![Screenshot 2022-03-04 at 12 08 50](https://user-images.githubusercontent.com/67963370/156761075-747c4bd4-86ee-427a-9477-00f0b1c3903e.png)
+![screencapture-theoladas-github-io-Billy-Pearson-Portfolio-DevChallenge-2022-06-14-15_25_24](https://user-images.githubusercontent.com/67963370/173602046-fa169b70-0f62-465a-842a-2d147feae4b6.png)
 
 
 
 ### Built With
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
-- HTML5
-- CSS3
-- Sass
+- [HTML5](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Sass](https://sass-lang.com/)
 
 ## Features
 
